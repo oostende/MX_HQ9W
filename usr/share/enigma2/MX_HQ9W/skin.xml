@@ -2988,7 +2988,7 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 12), size = (48, 48), png = 6), # i
 <ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_green" render="Label" position="340,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="key_yellow" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="UserManager" position="30,120" size="820,850" title="UserManager">
@@ -5338,4 +5338,213 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
 <ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="260,265" size="48,48" alphatest="blend"/>
 <widget source="key_red" render="Label" position="320,265" zPosition="1" size="330,50" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-</skin>  
+<screen name="EPGImportFilterScreen" position="30,120" size="820,850" title="EPGImportFilterScreen">
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="list" position="20,20" size="780,560" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<widget name="status" position="10,600" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="statusbar" position="10,650" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="EGPMatchByName" position="center,200" size="1300,720" title="EGPMatchByName">
+<widget name="list1" position="20,10" size="620,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<widget name="list2" position="660,10" size="620,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<widget name="text" position="20,420" size="1260,60" halign="center" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="text2" position="20,480" size="1260,60" halign="center" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="status" position="20,540" size="1260,35" halign="center" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="statusbar" position="20,580" size="1260,35" halign="center" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<eLabel position="0,415" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="650,0" size="3,415" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="40,640" zPosition="2" size="150,70" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="button" backgroundColor="bgmain"/>
+<ePixmap pixmap="MX_HQ9W/buttons/key_1.png" position="190,660" zPosition="2" size="35,25" transparent="1" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/key_2.png" position="220,660" zPosition="2" size="35,25" transparent="1" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/key_3.png" position="250,660" zPosition="2" size="35,25" transparent="1" alphatest="blend"/>
+<widget name="key_refresh" position="300,650" zPosition="2" size="150,70" valign="center" halign="left" font="Regular;28" transparent="1" foregroundColor="white" />
+<ePixmap pixmap="MX_HQ9W/buttons/key_4.png" position="404,660" zPosition="2" size="35,25" transparent="1" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/key_5.png" position="434,660" zPosition="2" size="35,25" transparent="1" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/key_6.png" position="464,660" zPosition="2" size="35,25" transparent="1" alphatest="blend"/>
+<widget name="key_filter" position="515,650" zPosition="2" size="150,70" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="670,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="970,650" size="48,48" alphatest="blend"/>
+<widget name="key_green" position="730,640" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="1030,640" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkMacSetup" position="30,120" size="820,850" title="NetworkMacSetup">
+<widget name="config" position="10,20" size="800,210" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x35.png" selectionPixmap="MX_HQ9W/menu/button820x35.png" transparent="1"/>
+<widget source="introduction" render="Label" position="10,585" size="800,40" zPosition="1" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" halign="center" transparent="1"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="490,780" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_green" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkFtp" position="30,120" size="820,850" title="NetworkFtp">
+<widget name="lab1" position="30,120" size="760,90" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="lab2" position="30,250" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labstop" position="340,250" size="225,35" font="Regular;30" valign="center" halign="center" backgroundColor="red"/>
+<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;30" valign="center" halign="center" backgroundColor="green"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="70,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="340,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="610,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkNfs" position="30,120" size="820,850" title="NetworkNfs">
+<widget name="lab1" position="30,120" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labactive" position="340,120" size="225,35" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="lab2" position="30,250" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labstop" position="340,250" size="225,35" font="Regular;30" valign="center" halign="center" backgroundColor="red"/>
+<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;30" valign="center" halign="center" backgroundColor="green"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="70,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="340,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="610,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkSamba" position="30,120" size="820,850" title="NetworkSamba">
+<widget name="lab1" position="30,120" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labactive" position="340,120" size="225,35" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="lab2" position="30,250" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labstop" position="340,250" size="225,35" font="Regular;30" valign="center" halign="center" backgroundColor="red"/>
+<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;30" valign="center" halign="center" backgroundColor="green"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="70,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="340,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="610,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkOpenvpn" position="30,120" size="820,850" title="NetworkSamba">
+<widget name="lab1" position="30,120" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labactive" position="340,120" size="225,35" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="lab2" position="30,250" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labstop" position="340,250" size="225,35" font="Regular;30" valign="center" halign="center" backgroundColor="red"/>
+<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;30" valign="center" halign="center" backgroundColor="green"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkTelnet" position="30,120" size="820,850" title="Telnet Setup">
+<widget name="lab1" position="30,120" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labactive" position="340,120" size="225,35" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="lab2" position="30,250" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labstop" position="340,250" size="225,35" font="Regular;30" valign="center" halign="center" backgroundColor="red"/>
+<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;30" valign="center" halign="center" backgroundColor="green"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="70,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="340,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="610,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkSABnzbd" position="30,120" size="820,850" title="NetworkSABnzbd">
+<widget name="lab1" position="30,120" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labactive" position="340,120" size="225,35" font="Regular;30" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="lab2" position="30,250" size="450,35" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="labstop" position="340,250" size="225,35" font="Regular;30" valign="center" halign="center" backgroundColor="red"/>
+<widget name="labrun" position="340,250" size="225,35" zPosition="1" font="Regular;30" valign="center" halign="center" backgroundColor="green"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="550,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="70,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="340,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="610,770" size="200,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkInadyn" position="30,120" size="820,850" title="NetworkInadyn">
+<ePixmap pixmap="MX_HQ9W/menu/menubutton.png" position="745,720" size="48,48" alphatest="blend"/>
+<widget name="autostart" position="30,20" size="150,40" font="Regular;28" valign="center" transparent="0"/>
+<widget name="labdisabled" position="180,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+<widget name="labactive" position="180,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+<widget name="status" position="425,20" size="230,40" font="Regular;28" valign="center" transparent="0"/>
+<widget name="labstop" position="640,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+<widget name="labrun" position="640,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+<widget name="time" position="30,120" size="350,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labtime" position="630,120" size="150,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<widget name="username" position="30,170" size="150,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labuser" position="280,170" size="500,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<widget name="password" position="30,220" size="150,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labpass" position="280,220" size="500,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<widget name="alias" position="30,270" size="150,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labalias" position="280,270" size="500,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<widget name="sinactive" position="20,320" zPosition="1" pixmap="MX_HQ9W/icons/ninactive.png" size="35,40" alphatest="blend"/>
+<widget name="sactive" position="20,320" zPosition="2" pixmap="MX_HQ9W/icons/nactive.png" size="35,40" alphatest="blend"/>
+<widget name="system" position="70,320" size="100,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labsys" position="280,320" size="500,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkInadynSetup" position="30,120" size="820,850" title="Inadyn Setup">
+<widget name="config" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="HelpWindow" position="200,700" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget source="key_red" render="Label" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="NetworkInadynLog" position="30,120" size="820,850" title="Inadyn Log">
+<widget name="infotext" position="20,20" size="780,580" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="NetworkMiniDLNA" position="30,120" size="820,850" title="NetworkMiniDLNA">
+<widget name="autostart" position="30,20" size="150,40" font="Regular;28" valign="center" transparent="0"/>
+<widget name="labdisabled" position="180,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+<widget name="labactive" position="180,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+<widget name="status" position="425,20" size="230,40" font="Regular;28" valign="center" transparent="0"/>
+<widget name="labstop" position="640,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+<widget name="labrun" position="640,20" size="140,40" font="Regular;28" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+<widget name="username" position="30,120" size="150,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labuser" position="280,120" size="500,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<widget name="iface" position="30,170" size="150,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labiface" position="280,170" size="500,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<widget name="port" position="30,220" size="150,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labport" position="280,220" size="500,40" font="Regular;28" valign="center" backgroundColor="#4D5375"/>
+<widget name="serialno" position="30,270" size="150,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labserialno" position="280,270" size="500,40" font="Regular;28" valign="top" backgroundColor="#4D5375"/>
+<widget name="sharedir" position="30,320" size="150,70" font="Regular;28" valign="center" transparent="1"/>
+<widget name="labsharedir" position="280,320" size="500,70" font="Regular;28" valign="top" backgroundColor="#4D5375"/>
+<widget name="inotify"  position="30,440" size="250,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="inotifyinactive" position="300,440" zPosition="1" pixmap="MX_HQ9W/icons/ninactive.png" size="35,40" alphatest="blend"/>
+<widget name="inotifyactive" position="300,440" zPosition="2" pixmap="MX_HQ9W/icons/nactive.png" size="35,40" alphatest="blend"/>
+<widget name="tivo"  position="30,490" size="250,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="tivoinactive" position="300,490" zPosition="1" pixmap="MX_HQ9W/icons/ninactive.png" size="35,40" alphatest="blend"/>
+<widget name="tivoactive" position="300,490" zPosition="2" pixmap="MX_HQ9W/icons/nactive.png" size="35,40" alphatest="blend"/>
+<widget name="dlna" position="30,540" size="250,40" font="Regular;28" valign="center" transparent="1"/>
+<widget name="dlnainactive" position="300,540" zPosition="1" pixmap="MX_HQ9W/icons/ninactive.png" size="35,40" alphatest="blend"/>
+<widget name="dlnaactive" position="300,540" zPosition="2" pixmap="MX_HQ9W/icons/nactive.png" size="35,40" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+</skin>
