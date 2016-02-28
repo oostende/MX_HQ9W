@@ -624,14 +624,13 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <widget source="session.CurrentService" render="Label" position="1350,228" size="200,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">VideoCodec</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="80,228" size="365,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<widget source="session.CurrentService" render="Label" position="75,256" size="365,30" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">CryptoSpecial</convert>
 </widget>
-
 <widget source="session.CurrentService" render="Label" position="275,228" size="920,90" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="CryptoInfo">VerboseInfo</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="80,256" size="400,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<widget source="session.CurrentService" render="Label" position="65,228" size="400,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">CryptoBar</convert>
 </widget>
 </screen> 
@@ -1237,17 +1236,17 @@ MultiContentEntryText(pos = (10, 2), size = (800, 40), flags = RT_HALIGN_LEFT|RT
 {"templates":
 {"default": (37, [ 
 MultiContentEntryText(pos = (0, 0),   size = (0, 0),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-MultiContentEntryText(pos = (5, 3),  size = (50, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-MultiContentEntryText(pos = (55, 3), size = (250, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-MultiContentEntryText(pos = (305, 3), size = (360, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-MultiContentEntryText(pos = (665, 3), size = (155, 37),  font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
+MultiContentEntryText(pos = (2, 3),  size = (62, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
+MultiContentEntryText(pos = (60, 3), size = (250, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+MultiContentEntryText(pos = (310, 3), size = (360, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
 ], True, "showNever"),
 "notselected": (37, [ 
 MultiContentEntryText(pos = (0, 0),   size = (0, 0),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-MultiContentEntryText(pos = (5, 3),  size = (50, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-MultiContentEntryText(pos = (55, 3), size = (250, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-MultiContentEntryText(pos = (305, 3), size = (360, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-MultiContentEntryText(pos = (665, 3), size = (155, 37),  font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
+MultiContentEntryText(pos = (2, 3),  size = (62, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
+MultiContentEntryText(pos = (60, 3), size = (250, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+MultiContentEntryText(pos = (310, 3), size = (360, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
 ], False, "showNever")
 },
 "fonts": [gFont("Regular", 26), gFont("Regular", 26)],
