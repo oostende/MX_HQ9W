@@ -4516,7 +4516,7 @@ newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
 </screen>
-<screen name="EPGMainSetup" position="30,120" size="820,850" title="EPG Import Configuration">
+<screen name="EPGImportConfig" position="30,120" size="820,850" title="EPG Import Configuration">
 <ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
@@ -4530,7 +4530,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget name="status" position="10,600" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 <widget name="statusbar" position="10,650" size="780,35" halign="left" font="Regular;30" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
 </screen>
-<screen name="XMLTVImportSources" position="30,120" size="820,850" title="EPG Import Sources">
+<screen name="EPGImportSources" position="30,120" size="820,850" title="EPG Import Sources">
 <ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
@@ -4542,7 +4542,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 <widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="list" position="20,20" size="780,560" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
 </screen>
-<screen name="XMLTVImportLog" position="30,120" size="820,850" title="EPG Import Log">
+<screen name="EPGImportLog" position="30,120" size="820,850" title="EPG Import Log">
 <ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
