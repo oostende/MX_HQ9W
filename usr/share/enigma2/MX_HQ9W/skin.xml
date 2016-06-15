@@ -2037,6 +2037,15 @@ MultiContentEntryText(pos = (10, 48), size = (800, 90), font = 1, flags = RT_HAL
 </screen>
 <screen name="NimSetup" position="30,120" size="820,850" title="Reception Settings">
 <widget name="config" position="10,5" size="800,840" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget source="key_red" render="Label" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_green" render="Label" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="Satfinder" position="30,120" size="820,850" title="Satfinder">
 <eLabel name="snr" text="SNR:" position="35,22" size="90,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
@@ -6022,5 +6031,593 @@ self["list"].instance.setItemHeight(40)
 <widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_blue" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSupportSettings" position="30,120" size="820,850" title="SubsSupport Settings">
+<widget name="menuList" position="20,20" size="780,800" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+</screen>
+<screen name="SubsSetupGeneral" position="30,120" size="820,850" title="SubsSetupGeneral">
+<widget name="config" position="20,20" size="780,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSetupExternal" position="30,120" size="820,850" title="SubsSetupExternal">
+<widget name="config" position="20,20" size="780,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSetupEmbedded" position="30,120" size="820,850" title="SubsSetupEmbedded">
+<widget name="config" position="20,20" size="780,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSearchProviderMenu" position="30,120" size="820,850" title="SubsSearchProviderMenu">
+<widget name="config" position="20,20" size="780,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSetupMainMisc" position="30,120" size="820,850" title="SubsSetupMainMisc">
+<widget name="config" position="20,20" size="780,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSearch" position="center,200" size="1300,720" title="SubsSearch">
+<widget source="search_info" render="Listbox" position="20,10" size="1260,200" zPosition="3" scrollbarMode="showNever" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x35.png" selectionPixmap="MX_HQ9W/menu/button1260x35.png" transparent="1">
+<convert type="TemplatedMultiContent">
+{"templates":
+{"default": (33, [
+MultiContentEntryText(pos = (0, 0),   size = (270, 35),  font = 0, color = 0xDAA520, flags = RT_HALIGN_LEFT,  text = 0), # langname,
+MultiContentEntryText(pos = (290, 0),   size = (870, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
+], False, "showNever"),
+},
+"fonts": [gFont("Regular", 26)],
+"itemHeight":33,
+}
+</convert>
+</widget>
+<widget source="header_country" render="Label" position = "20,225" size="150,35" font="Regular;28" halign="left" foregroundColor="blue" />
+<widget source="header_release" render="Label" position = "200,225" size="335,35" font="Regular;28" halign="left" foregroundColor="blue" />
+<widget source="header_provider" render="Label" position = "1040,225" size="135,35" font="Regular;28" halign="left" foregroundColor="blue" />
+<widget source="header_sync" render="Label" position = "1220,225" size="20,35" font="Regular;28" halign="left" foregroundColor="blue" />
+<eLabel position="0,220" size="1300,2" backgroundColor="#323232" />
+<eLabel position="0,265" size="1300,2" backgroundColor="#323232" />
+<widget name="loadmessage"  position="20,270" size="1260,350" valign="center" halign="center" font="Regular;28" foregroundColor="#ffffff" zPosition="4" />
+<widget name="errormessage" position="20,270" size="1260,350" valign="center" halign="center" font="Regular;28" foregroundColor="#ff0000" zPosition="5" />
+<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" position="20,270" size="1260,350" zPosition="3" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x35.png" selectionPixmap="MX_HQ9W/menu/button1260x35.png" transparent="1">
+<convert type="TemplatedMultiContent">
+{"templates":
+{"default": (35, [
+MultiContentEntryPixmapAlphaBlend(pos = (0, 5),   size = (24, 24), png=0), # key,
+MultiContentEntryText(pos = (30, 0),   size = (150, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
+MultiContentEntryText(pos = (180, 0),  size = (820, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
+MultiContentEntryText(pos = (1020, 0), size = (180, 35), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # size,
+MultiContentEntryPixmapAlphaBlend(pos = (1210, 0),   size = (24, 24), png=4), # syncPng,
+], True, "showOnDemand"),
+"old": (35, [
+MultiContentEntryPixmapAlphaBlend(pos = (0, 5),   size = (24, 24), png=0), # key,
+MultiContentEntryText(pos = (30, 0),   size = (150, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
+MultiContentEntryText(pos = (180, 0),  size = (780, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
+MultiContentEntryText(pos = (980, 0), size = (180, 35), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # size,
+MultiContentEntryText(pos = (1160, 0), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # sync,
+], True, "showOnDemand"),
+},
+"fonts": [gFont("Regular", 26), gFont("Regular", 26)],
+"itemHeight": 35
+}
+</convert>
+</widget>   
+<widget source="key_menu_img" render="Pixmap" pixmap="MX_HQ9W/menu/menubutton.png" position="1240,650" size="48,48" alphatest="blend">
+<convert type="ConditionalShowHide" />
+</widget>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_green" render="Label" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSearchContextMenu" position="center,200" size="1300,720" title="SubsSearch ContextMenu">
+<widget source="subtitle_release" render="Label" position="20,20" size="1260,40" font="Regular;30" foregroundColor="blue" transparent="1"/>
+<widget source="context_menu" render="Listbox" position="20,80" size="1260,400" scrollbarMode="showNever" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1">
+<convert type="TemplatedMultiContent">
+{"templates":
+{"default": (40, [
+MultiContentEntryText(pos = (5, 0),   size = (380, 40),  font = 0, color = 0xffffff, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0), # langname,
+], True, "showOnDemand"),
+},
+"fonts": [gFont("Regular", 28)],
+"itemHeight":40,
+}
+</convert>
+</widget>
+</screen>
+<screen name="SubsChooser" position="30,120" size="820,850" title="SubsChooser">
+<widget name="file_list" position="20,20" size="780,420" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x35.png" selectionPixmap="MX_HQ9W/menu/button820x35.png" transparent="1"/>
+<eLabel position="0,450" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<widget name="menu_list" position="20,460" size="780,350" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x35.png" selectionPixmap="MX_HQ9W/menu/button820x35.png" transparent="1"/>
+</screen>
+<screen name="SubsSearchSettings" position="center,200" size="1300,720" title="SubsSearchSettings">
+<widget name="config" position="20,10" size="1260,280" zPosition="3" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x35.png" selectionPixmap="MX_HQ9W/menu/button1260x35.png" transparent="1"/>
+<widget source="header_name" render="Label" position = "20,305" size="150,35" font="Regular;28" halign="left" foregroundColor="blue" />
+<widget source="header_lang" render="Label" position = "280,305" size="335,35" font="Regular;28" halign="left" foregroundColor="blue" />
+<widget source="header_state" render="Label" position = "1070,305" size="135,35" font="Regular;28" halign="right" foregroundColor="blue" />
+<eLabel position="0,300" size="1300,2" zPosition="-1" backgroundColor="#323232"/>
+<eLabel position="0,343" size="1300,2" backgroundColor="#323232" />
+<widget source="providers" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" position="20,348" size="1260,280" zPosition="3" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x35.png" selectionPixmap="MX_HQ9W/menu/button1260x35.png" transparent="1" >
+<convert type="TemplatedMultiContent">
+{"templates":
+{"default": (35, [
+MultiContentEntryText(pos = (0, 0),   size = (250, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 0), # name,
+MultiContentEntryText(pos = (260, 0),  size = (800, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # lang,
+MultiContentEntryText(pos = (1060, 0), size = (160, 35), font = 0, flags = RT_HALIGN_RIGHT, text = 2, color=0xFF000003) # enabled,
+], True, "showOnDemand"),
+"notselected": (35, [
+MultiContentEntryText(pos = (0, 0),   size = (250, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 0), # name,
+MultiContentEntryText(pos = (260, 0),  size = (800, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # lang,
+MultiContentEntryText(pos = (1060, 0), size = (160, 35), font = 0, flags = RT_HALIGN_RIGHT, text = 2, color=0xFF000003) # enabled,
+], False, "showOnDemand")
+},
+"fonts": [gFont("Regular", 28), gFont("Regular", 24)],
+"itemHeight": 35
+}
+</convert>
+</widget>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSetupDVBPlayer" position="30,120" size="820,850" title="SubsSetupGeneral">
+<widget name="config" position="20,20" size="780,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsDownloadedSubtitlesMenu" position="30,120" size="820,850" title="SubsDownloadedSubtitlesMenu">
+<widget name="config" position="20,20" size="780,640" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsDownloadedSelection" position="center,200" size="1300,720" title="SubsDownloadedSelection">
+<widget source="header_name" render="Label" position = "60,10" size="360,25" font="Regular;28" halign="left" foregroundColor="blue" />
+<widget source="header_provider" render="Label" position = "920,10" size="140,25" font="Regular;28" halign="left" foregroundColor="blue" />
+<widget source="header_date" render="Label" position = "1060, 10" size="220,25" font="Regular;28" halign="center" foregroundColor="blue" />
+<eLabel position="0,50" size="1300,2" backgroundColor="#323232" />
+<widget source="subtitles" render="Listbox" position="20,62" size="1260,560" enableWrapAround="1" scrollbarMode="showNever" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x35.png" selectionPixmap="MX_HQ9W/menu/button1260x35.png" transparent="1">
+<convert type="TemplatedMultiContent">
+{"templates":
+{"default": (35, [
+MultiContentEntryPixmapAlphaBlend(pos = (0, 5),   size = (24, 24), png=0), # key,
+MultiContentEntryText(pos = (40, 0),   size = (840, 40),  font = 0, flags = RT_HALIGN_LEFT, text=1, color=0xFF000004), # name,
+MultiContentEntryText(pos = (900, 0),  size = (140, 40),  font = 1, flags = RT_HALIGN_LEFT,  text = 2, color=0xFF000004), # provider,
+MultiContentEntryText(pos = (1060, 0), size = (220, 40), font = 1, flags = RT_HALIGN_LEFT,  text = 3, color=0xFF000004), # date,
+], True, "showOnDemand"),
+},
+"fonts": [gFont("Regular", 26), gFont("Regular", 22)],
+"itemHeight": 35
+}
+</convert>
+</widget>
+<widget source="entries_sum" render="Label" position = "20,660" size="400,35" font="Regular;28" halign="left" foregroundColor="#008cff" />
+<ePixmap pixmap="MX_HQ9W/menu/epg.png" position="1240,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="430,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="802,650" size="48,48" alphatest="blend"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#323232"/>
+<widget source="key_red" render="Label" position="490,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SubsSearchParamsMenu" position="center,270" size="1300,700" title="SubsSearchParamsMenu">
+<widget source="sourceTitleInfo" render="Label" position="20,10" size="1260,40" halign="center" font="Regular;28" foregroundColor="blue" />
+<widget source="sourceTitle" render="Label" position="20,50" size="1260,40" halign="center" font="Regular;28" />
+<widget source="searchTitleParams" render="Label" position="20,90" size="1260,40" halign="center" font="Regular;28" foregroundColor="#ffbb00"/>
+<eLabel position="0,130" size="1300,2" backgroundColor="#323232" />
+<widget name="config" position="20,140" size="1260,440" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<widget source="pressOkTitleInfo" render="Label" position="20,630" size="1260,40" halign="center" font="Regular;28" />
+</screen>
+<screen name="MyLanguageSelection" position="30,120" size="560,850" title="Language selection">
+<widget source="languages" render="Listbox" enableWrapAround="1" position="2,10" size="556,825" zPosition="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x55.png" selectionPixmap="MX_HQ9W/menu/sel820x55.png" scrollbarMode="showNever" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [
+MultiContentEntryText(pos = (100, 9), size = (710, 35), flags = RT_HALIGN_LEFT, text = 1), 
+MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2), 
+],
+"fonts": [gFont("Regular", 32)],
+"itemHeight": 55
+}
+</convert>
+</widget>
+</screen>
+<screen name="SubsSearchDownloadOptions" position="center,200" size="1300,720" title="SubsSearchDownloadOptions">
+<widget name="config" position="20,10" size="1260,560" zPosition="2" itemHeight="35" font="Regular;28" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x35.png" selectionPixmap="MX_HQ9W/menu/button1260x35.png" transparent="1"/>
+<eLabel position="18,128" size="1264,79" backgroundColor="#ff0000" />
+<widget source="fname" render="Label" position="20,130" size="1260,75" valign="center" halign="center" font="Regular;28" foregroundColor="#ffffff" zPosition="1" />
+<eLabel position="18,220" size="1264,79" backgroundColor="#00ff00" />
+<widget source="dpath" render="Label" position="20,222" size="1260,75" valign="center" halign="center" font="Regular;28" foregroundColor="#ffffff" zPosition="1" />
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#323232"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="278,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="626,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="926,650" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="338,640" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_green" render="Label" position="686,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="986,640" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="AutoBouquetsMaker_Setup" position="center,200" size="1300,720" title="AutoBouquetsMaker Setup">
+<ePixmap name="red" pixmap="MX_HQ9W/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
+<ePixmap name="green" pixmap="MX_HQ9W/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="config" position="20,20" size="1260,520" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<widget name="pleasewait" position="20,560" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="description" position="20,590" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+</screen>
+<screen name="AutoBouquetsMaker_Menu" position="center,200" size="1300,720" title="AutoBouquetsMaker Menu">
+<widget source="list" render="Listbox" position="20,20" size="1260,400" scrollbarMode="showNever" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [
+MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (32, 32), png = 0),
+MultiContentEntryText(pos = (58, 2), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+],
+"fonts": [gFont("Regular", 30)],
+"itemHeight": 40			}
+</convert>
+</widget>
+</screen>
+<screen name="AutoBouquetsMaker_ProvidersSetup" position="center,200" size="1300,720" title="AutoBouquetsMaker Providers Setup">
+<ePixmap name="red" pixmap="MX_HQ9W/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
+<ePixmap name="green" pixmap="MX_HQ9W/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="config" position="20,20" size="1260,520" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<widget name="pleasewait" position="20,560" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="description" position="20,590" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+</screen>
+<screen name="AutoBouquetsMaker_HideSections" position="center,200" size="1300,720" title="AutoBouquetsMaker Hide Sections">
+<ePixmap name="red" pixmap="MX_HQ9W/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
+<ePixmap name="green" pixmap="MX_HQ9W/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="list" render="Listbox" position="20,20" size="1260,400" scrollbarMode="showNever" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [
+MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (32, 32), png = 0),
+MultiContentEntryText(pos = (47, 2), size = (500, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+MultiContentEntryText(pos = (550, 2), size = (700, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+],
+"fonts": [gFont("Regular", 30)],
+"itemHeight": 40				}
+</convert>
+</widget>
+</screen>
+<screen name="AutoBouquetsMaker_Ordering" position="center,200" size="1300,720" title="AutoBouquetsMaker Ordering">
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget source="list" render="Listbox" position="20,20" size="1260,560" scrollbarMode="showNever" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1">
+<convert type="TemplatedMultiContent">
+{"template": [
+MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+],
+"fonts": [gFont("Regular", 30)],
+"itemHeight": 40					}
+</convert>
+</widget>
+<ePixmap name="red" pixmap="MX_HQ9W/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
+<ePixmap name="green" pixmap="MX_HQ9W/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap name="yellow" pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap name="blue" pixmap="MX_HQ9W/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="pleasewait" position="20,560" size="1260,30" zPosition="2" font="Regular;24" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+</screen>
+<screen name="AutoBouquetsMaker_Log" position="center,200" size="1300,720" title="AutoBouquetsMaker Log">
+<ePixmap name="yellow" pixmap="MX_HQ9W/buttons/yellow48x48.png" position="600,650" size="48,48" alphatest="blend"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_yellow" position="650,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="list" position="20,20" size="1260,600" zPosition="2" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+</screen>
+<screen name="AutoBouquetsMaker_About" position="center,200" size="1300,720" title="AutoBouquetsMaker About">
+<ePixmap name="red" pixmap="MX_HQ9W/buttons/red48x48.png" position="600,650" size="48,48" alphatest="blend"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_red" position="650,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="about" position="20,20" size="1260,500" zPosition="2" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="oealogo" position="1050,420" size="200,135"  zPosition="4" transparent="1" alphatest="blend"/>
+</screen>
+<screen name="ConfigMenu" position="center,center" size="1445,765" title="IPTV Player - settings">
+<widget name="config" position="20,10" size="1405,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1410x40.png" selectionPixmap="MX_HQ9W/menu/button1410x40.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_ok" position="1055,715" size="300,48" zPosition="1" font="Regular;28" halign="right" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_HQ9W/menu/ok.png" position="1200,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="440,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="865,715" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="495,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="920,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="ConfigHostMenu" position="center,center" size="1445,765" title="Services configuration">
+<widget name="config" position="20,10" size="1405,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1410x40.png" selectionPixmap="MX_HQ9W/menu/button1410x40.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_ok" position="1055,715" size="300,48" zPosition="1" font="Regular;28" halign="right" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_HQ9W/menu/ok.png" position="1200,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="440,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="865,715" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="495,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="920,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="ConfigHostsMenu" position="center,center" size="1445,765" title="Services configuration">
+<widget name="config" position="20,10" size="1405,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1410x40.png" selectionPixmap="MX_HQ9W/menu/button1410x40.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_ok" position="1055,715" size="300,48" zPosition="1" font="Regular;28" halign="right" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_HQ9W/menu/ok.png" position="1200,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="440,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="865,715" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="495,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="920,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="ConfigExtMoviePlayer" position="center,center" size="1445,765" title="Configuration">
+<widget name="config" position="20,10" size="1405,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1410x40.png" selectionPixmap="MX_HQ9W/menu/button1410x40.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<widget name="key_ok" position="1055,715" size="300,48" zPosition="1" font="Regular;28" halign="right" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<ePixmap pixmap="MX_HQ9W/menu/ok.png" position="1200,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="440,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="865,715" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="495,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="920,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="IPTVPlayerWidget" position="center,center" size="1445,765" title="IPTVPlayer">
+<widget name="cover" position="1120,0" size="240,370" zPosition="3" alphatest="blend" />
+<widget name="headertext" position="20,0" size="1000,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="statustext" position="20,0" size="1000,35" zPosition="1" halign="right" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="console" position="1055,380" zPosition="1" size="380,300" halign="left" font="Regular;26" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="list" position="20,50" size="1015,640" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1180x40.png" selectionPixmap="MX_HQ9W/menu/button1180x40.png" transparent="1"/>
+<widget name="playerlogo" zPosition="4" position="1310,720" size="120,40" alphatest="blend" />
+<widget name="sequencer" position="0,0" zPosition="1" size="1445,765" font="Regular;160" halign="center" valign="center" transparent="1" backgroundColor="#00000000" />
+<widget name="spinner"  zPosition="2" position="489,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_1" zPosition="1" position="489,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_2" zPosition="1" position="505,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_3" zPosition="1" position="521,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_4" zPosition="1" position="537,400" size="16,16" transparent="1" alphatest="blend" />
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="1040,0" size="3,695" zPosition="1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/menu/ok.png" position="1240,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/menu/epg.png" position="1170,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="40,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="335,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="925,715" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="95,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="390,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_yellow" render="Label" position="685,715" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_blue" render="Label" position="980,715" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="IPTVArticleRichVisualizer" position="center,center" size="1445,765" title="Info...">
+<widget name="text" position="20,50" size="1000,700" zPosition="1" halign="left" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="cover" position="1120,0" size="240,370" zPosition="3" alphatest="blend" />
+<widget name="title" position="20,0" zPosition="1" size="1000,40" halign="left" font="Regular;32" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="spinner"  zPosition="2" position="489,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_1" zPosition="1" position="489,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_2" zPosition="1" position="505,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_3" zPosition="1" position="521,400" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_4" zPosition="1" position="537,400" size="16,16" transparent="1" alphatest="blend" />
+<eLabel position="1040,0" size="3,765" zPosition="1" backgroundColor="#272727"/>
+</screen>
+<screen name="IPTVSetupMainWidget" position="center,center" size="800,300" title="IPTVPlayer Setup">
+<widget name="sub_title" position="10,10" zPosition="2" size="780,100"  halign="center" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="info_field" position="10,100" zPosition="2" size="780,200" halign="center" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="spinner" zPosition="2" position="563,200" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_1" zPosition="1" position="563,200" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_2" zPosition="1" position="579,200" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_3" zPosition="1" position="595,200" size="16,16" transparent="1" alphatest="blend" />
+<widget name="spinner_4" zPosition="1" position="511,200" size="16,16" transparent="1" alphatest="blend" />
+</screen>
+<screen name="IPTVChoiceBoxWidget" position="center,center" size="820,360" title="ChoiceBox">
+<widget name="title" position="20,0" size="780,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="list" position="20,50" size="780,300" zPosition="2" font="Regular;28" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+</screen>
+<screen name="IPTVDMWidget" position="center,center" size="1445,765" title="IPTV Player download manager">
+<widget name="titel" position="20,0" size="1405,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="list" position="20,50" size="1405,600" zPosition="2" font="Regular;28" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1410x120.png" selectionPixmap="MX_HQ9W/menu/button1410x120.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="240,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="535,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="830,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="1125,715" size="48,48" alphatest="blend"/>
+<widget source="key_red" render="Label" position="295,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_green" render="Label" position="590,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_yellow" render="Label" position="885,715" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="key_blue" render="Label" position="1180,715" size="225,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="IPTVFavouritesMainWidget" position="center,center" size="1445,765" title="IPTV Favourites manager">
+<widget name="title" position="20,0" size="1405,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="list" position="20,50" size="1405,600" zPosition="2" font="Regular;28" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1410x120.png" selectionPixmap="MX_HQ9W/menu/button1410x120.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="140,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="635,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="1070,715" size="48,48" alphatest="blend"/>
+<widget name="label_red" position="195,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="label_green" position="690,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="label_yellow" position="1125,715" size="245,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="IPTVDirectorySelectorWidget" position="center,center" size="1445,765" title="IPTVDirectory Selector">
+<widget name="curr_dir" position="20,0" size="1405,40" zPosition="1" halign="left" font="Regular;32" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="list" position="20,50" size="1405,640" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1410x40.png" selectionPixmap="MX_HQ9W/menu/button1410x40.png" transparent="1"/>
+<eLabel position="0,695" size="1445,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="140,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="635,715" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="1070,715" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="195,715" size="285,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="690,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_blue" position="1125,715" size="265,48" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+</screen>
+<screen name="IPTVUpdateWindow" position="center,center" size="820,410" title="IPTVplayer Update">
+<widget name="sub_title" position="20,0" size="780,35" zPosition="1" halign="left" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="list" position="20,50" size="780,350" zPosition="2" font="Regular;28" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x90.png" selectionPixmap="MX_HQ9W/menu/button820x90.png" transparent="1"/>
+<widget name="console" position="0,0" size="780,360" zPosition="1" valign="center" halign="center" font="Regular;30" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+</screen>
+<screen name="SeriesPluginConfiguration" position="center,200" size="1300,720" title="SeriesPlugin Setup">
+<widget name="config" position="20,20" size="1260,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SeriesPluginChannelEditor" position="center,200" size="1300,720" title="Channel Editor">
+<widget name="list" position="20,20" size="1260,600" zPosition="2" font="Regular;30" iconSize="16" colWidthStb="300" colWidthWeb="250" margin="10" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="key_blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SeriesPluginInfoScreen" position="center,105" size="1820,880" title="SeriesPlugin">
+<eLabel position="1200,20" size="620,320" zPosition="2" backgroundColor="black"/>
+<widget source="session.VideoPicture" render="Pig" position="1228,30" zPosition="3" size="530,300" backgroundColor="#ff000000"/>
+<widget name="logo" position="1318,550" size="380,64" zPosition="1" alphatest="blend" />
+<widget name="event_title" position="20,20" size="1170,45" zPosition="1" font="Regular;38" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="event_episode" position="20,70" zPosition="1" size="1170,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="event_description" position="20,120" size="1170,665" font="Regular;32" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="channel" position="1218,450" zPosition="1" size="580,90" font="Regular;32" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
+<widget name="datetime" position="1218,390" size="580,40" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<widget name="duration" position="1218,390" size="580,40" font="Regular;30" halign="right" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
+<eLabel position="0,790" size="1820,3" zPosition="1" backgroundColor="#272727"/>
+<eLabel position="1190,0" size="3,790" zPosition="1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="910,810" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="1335,810" size="48,48" alphatest="blend"/>
+<widget name="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget name="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget source="session.Event_Now" render="Label" position="1200,340" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
+<convert type="EventTime">StartTime</convert>
+<convert type="ClockToText"></convert>
+</widget>
+<widget source="session.Event_Now" render="Label" position="1677,340" zPosition="1" size="105,35" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
+<convert type="EventTime">EndTime</convert>
+<convert type="ClockToText">Format:%H:%M</convert>
+</widget>
+<widget source="session.Event_Now" render="Progress" position="1315,345" zPosition="1" pixmap="MX_HQ9W/progress.png" size="350,22" borderWidth="1" borderColor="#cccccc">
+<convert type="EventTime">Progress</convert>
+</widget>
+</screen>
+<screen name="FilebrowserScreen" position="center,200" size="1300,720" title="Filebrowser">
+<ePixmap pixmap="MX_HQ9W/menu/arrow_lr.png" position="1230,650" size="48,48" alphatest="blend"/>
+<widget name="list_left" position="20,20" size="610,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button1260x40.png" transparent="1"/>
+<widget name="list_right" position="670,20" size="610,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg1260x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="649,0" size="3,630" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<widget name="red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="StreamingClientsInfo" position="30,120" size="820,850" title="Streaming clients info">
+<widget name="ScrollLabel" position="20,20" size="780,800" font="Regular;28" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+</screen>
+<screen name="ChromiumOSWindow" position="30,120" size="820,850" title="Start ChromiumOS">
+<widget name="config" position="10,20" size="800,350" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x35.png" selectionPixmap="MX_HQ9W/menu/button820x35.png" transparent="1"/>
+<widget name="startdesc" position="10,620" size="800,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" halign="left" transparent="1"/>
+<widget name="helpdesc" position="10,660" size="800,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" halign="left" transparent="1"/>
+<widget name="settingdesc" position="10,700" size="800,40" zPosition="1" font="Regular;28" foregroundColor="button" backgroundColor="bgmain" halign="left" transparent="1"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="10,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="280,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend"/>
+<widget source="key_green" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_yellow" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_blue" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="PermanentClockScreen" position="1680,0" size="400,70" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
+<widget source="global.CurrentTime" render="Label" position="1,1" size="400,70" transparent="1" zPosition="0" foregroundColor="#ffffff" backgroundColor="#ff000000" shadowColor="#40101010"
+shadowOffset="2,2" font="Regular;56" valign="center" halign="right" >
+<convert type="ClockToText">Default</convert>
+</widget>
+</screen>
+<screen name="ChromiumOSSettings" position="30,120" size="820,850" title="ChromiumOS Settings">
+<widget name="config" position="10,20" size="800,490" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x35.png" selectionPixmap="MX_HQ9W/menu/button820x35.png" transparent="1"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="160,780" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="490,780" size="48,48" alphatest="blend"/>
+<eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="#272727"/>
+<widget source="key_green" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget source="key_red" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 </skin>
