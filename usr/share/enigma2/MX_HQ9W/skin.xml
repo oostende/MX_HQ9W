@@ -1,7 +1,7 @@
 <skin>
 <!--
 MX HQ9W
-Open black hole version: 0.4
+Open black hole version: 0.6
 skin author: Matrix10
 This skin is a Freeware. Everyone can modify and use it in other images,
 but don't tell it's yours, or your idea!		-->
@@ -5716,6 +5716,10 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
 <widget name="key_red" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+</screen>
+<screen name="SoftwareUpdateChoices" position="30,120" size="820,850" title="SoftwareUpdateChoices">
+<widget name="list" position="20,20" size="780,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
+<widget name="text" position="20,700" size="780,80" font="Regular;28" halign="center" backgroundColor="bgmain" transparent="1"/>
 </screen>
 <screen name="InfoBarEventView" position="55,490" size="1810,300" backgroundColor="#34000000" zPosition="5" flags="wfNoBorder">
 <widget source="Title" render="Label" position="20,15" size="1250,50" font="Regular;40" halign="left" backgroundColor="bgmain" transparent="1"/>
