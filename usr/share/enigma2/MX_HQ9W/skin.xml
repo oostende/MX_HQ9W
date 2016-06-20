@@ -182,16 +182,14 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
- <ePixmap position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_hd_off.png" alphatest="blend"/>
- <widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="2" pixmap="MX_HQ9W/ico_hd_on.png" alphatest="blend">
- <convert type="ServiceInfo">VideoWidth</convert>
- <convert type="ValueRange">721,1980</convert>
- <convert type="ConditionalShowHide" />
- </widget>
+<ePixmap position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_hd_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="2" pixmap="MX_HQ9W/ico_hd_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHD</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
 <widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="3" pixmap="MX_HQ9W/ico_uhd_on.png" alphatest="blend">
-<convert type="ServiceInfo">VideoWidth</convert>
-<convert type="ValueRange">1921,3840</convert>
-<convert type="ConditionalShowHide" />
+<convert type="ServiceInfo">Is4K</convert>
+<convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_HQ9W/icon_hbbtv_off.png" position="1585,36" zPosition="1" size="62,44" alphatest="blend"/>
 <widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ9W/icon_hbbtv_on.png" position="1585,36" size="62,44" zPosition="2" alphatest="blend">
@@ -420,16 +418,14 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ServiceInfo">IsCrypted</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
- <ePixmap position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_hd_off.png" alphatest="blend"/>
- <widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="2" pixmap="MX_HQ9W/ico_hd_on.png" alphatest="blend">
- <convert type="ServiceInfo">VideoWidth</convert>
- <convert type="ValueRange">721,1980</convert>
- <convert type="ConditionalShowHide" />
- </widget>
+<ePixmap position="1519,36" size="62,44" zPosition="1" pixmap="MX_HQ9W/ico_hd_off.png" alphatest="blend"/>
+<widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="2" pixmap="MX_HQ9W/ico_hd_on.png" alphatest="blend">
+<convert type="ServiceInfo">IsHD</convert>
+<convert type="ConditionalShowHide"/>
+</widget>
 <widget source="session.CurrentService" render="Pixmap" position="1519,36" size="62,44" zPosition="3" pixmap="MX_HQ9W/ico_uhd_on.png" alphatest="blend">
-<convert type="ServiceInfo">VideoWidth</convert>
-<convert type="ValueRange">1921,3840</convert>
-<convert type="ConditionalShowHide" />
+<convert type="ServiceInfo">Is4K</convert>
+<convert type="ConditionalShowHide"/>
 </widget>
 <ePixmap pixmap="MX_HQ9W/icon_hbbtv_off.png" position="1585,36" zPosition="1" size="62,44" alphatest="blend"/>
 <widget source="session.CurrentService" render="Pixmap" pixmap="MX_HQ9W/icon_hbbtv_on.png" position="1585,36" size="62,44" zPosition="2" alphatest="blend">
