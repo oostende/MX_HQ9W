@@ -4973,7 +4973,7 @@ self["list"].instance.setItemHeight(40)
 <widget source="global.CurrentTime" render="Label" position="70,34" size="240,45" font="Regular;42" halign="center" zPosition="1" foregroundColor="black" backgroundColor="white" transparent="1">
 <convert type="ClockToText">Format:%d.%m.%Y</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="650,34" size="620,50" halign="center" font="Regular;42" foregroundColor="black" backgroundColor="white" transparent="1">
+<widget source="Service" render="Label" position="650,34" size="620,50" halign="center" font="Regular;42" foregroundColor="black" backgroundColor="white" transparent="1">
 <convert type="ServiceName">Name</convert>
 </widget>
 <widget source="global.CurrentTime" render="Label" position="1660,32" size="130,55" font="Regular;46" valign="top" halign="right" foregroundColor="black" backgroundColor="white" transparent="1">
