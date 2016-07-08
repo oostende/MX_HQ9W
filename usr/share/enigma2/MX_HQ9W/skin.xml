@@ -622,13 +622,13 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <widget source="session.CurrentService" render="Label" position="1380,228" size="200,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">VideoCodec</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="75,228" size="435,30" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
-<convert type="PliExtraInfo">CryptoSpecial</convert>
-</widget>
 <widget source="session.CurrentService" render="Label" position="400,228" size="690,90" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="CryptoInfo">VerboseInfo</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="80,256" size="435,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<widget source="session.CurrentService" render="Label" position="75,228" size="405,30" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<convert type="PliExtraInfo">CryptoSpecial</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="80,256" size="405,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">CryptoBar</convert>
 </widget>
 </screen> 
